@@ -1,0 +1,27 @@
+type: edu
+custom_name: stage2
+files:
+- name: test/ParkingTest.java
+  visible: false
+  text: |
+    import org.hyperskill.hstest.v6.stage.BaseStageTest;
+    import parking.MainKt;
+
+    public abstract class ParkingTest<T> extends BaseStageTest<T> {
+        public ParkingTest() {
+            super(MainKt.class);
+        }
+    }
+  learner_created: false
+- name: src/parking/Main.kt
+  visible: true
+  text: |
+    package parking
+
+    fun main() {
+        println("Hello, World!")
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/75/stages/417/implement
+status: Solved
+record: 2
